@@ -2,7 +2,7 @@
 //Todos los valores están en céntimos (1 € = 100)
 
 export const fondoCaja = [
-    { valor: 50000, cantidad: 0 },
+    { valor: 50000, cantidad: 0 }, //piezas
     { valor: 20000, cantidad: 0 },
     { valor: 10000, cantidad: 0 },
     { valor: 5000, cantidad: 1 },
