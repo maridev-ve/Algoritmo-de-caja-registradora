@@ -2,24 +2,14 @@ import { fondoCaja, pagoCliente } from "./data.js"
 //pagoCliente  es el sobre con los billetes
 //calculoTotal(pagoCliente)  cómo se "cuenta el sobre"
 
-//El programa obtiene un precio de artículo
-
-
-
-
-
-
-
-
-
 
 //un importe pagado desglosado (se deben conocer las cantidades entregadas de todos los billetes y monedas)
 
 //FUNCION QUE CALCULA EL TOTAL DE CUALQUIER DESGLOSE (Total del dinero que tengo en la caja)
 function calculoTotal(desglose) {
     let sumaDinero = 0;
-
-
+        
+    
     desglose.forEach(pieza => {
         sumaDinero += pieza.valor * pieza.cantidad;
 
@@ -70,8 +60,7 @@ function cambioADevolver(cambio) {
         listaRestarACaja.push({ valor: pieza.valor, cantidad: monedas })
         let dineroQueHeDado = monedas * pieza.valor;
         cambio -= dineroQueHeDado
-
-    })
+})
 
     /* cambio es el papel donde voy tachando: al terminar el recorrido,
     - Con 1300: debía 700, di 500 + 200 y queda 0. Cambio completo.
@@ -104,7 +93,7 @@ function cambioADevolver(cambio) {
 
 
 //************************************************************************** */
-let precioProducto = 1940;
+let precioProducto = 1300;
 
 //CALCULO EL TOTAL DEL PAGO DEL CLIENTE PARA QUE ME DEVUELVA LA DIFERENCIA 
 let diferenciaPagoCliente = calculoTotal(pagoCliente) - precioProducto;

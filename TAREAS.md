@@ -16,6 +16,18 @@
 5. [X] Mostrar en euros dividiendo entre 100 **solo al mostrar**; los cálculos siempre en céntimos.
 6. [X] Probar con 3 precios: mayor que 2000, igual a 2000 y menor que 2000.
 
-## Más adelante
-- Calcular el desglose óptimo del cambio (de la pieza más grande a la más pequeña).
-- Actualizar la caja (sumar el pago, restar el cambio) y mostrar el estado final.
+## Desglose del cambio (hecho)
+- [x] Calcular el desglose óptimo del cambio (de la pieza más grande a la más pequeña).
+- [x] Avisar cuando la caja no puede dar el cambio ("Fondos insuficientes").
+- [x] Actualizar la caja (sumar el pago, restar el cambio) y mostrar el estado final.
+
+## Tarea extra: mostrar el resultado en la página (opcional)
+La lógica no cambia; solo cambia por dónde entran y salen los datos.
+
+1. [ ] En `index.html`, añadir un sitio donde escribir los mensajes (por ejemplo un párrafo o una lista vacía).
+2. [ ] Mostrar en la página **un** mensaje que ahora sale con `console.log` (empieza por "Pago completo"). Concepto: manipular el DOM.
+3. [ ] Mostrar el desglose del cambio en la página, una línea por pieza.
+4. [ ] Mostrar el estado final de la caja en la página.
+5. [ ] Añadir una casilla para escribir el precio y un botón que arranque el cálculo, en vez de cambiar `precioProducto` a mano. Concepto: eventos.
+
+Ojo: cada vez que se pulse el botón la caja ya estará modificada por la venta anterior. Piensa si eso es lo que quieres (una caja que va cambiando cliente a cliente) o si prefieres empezar de cero cada vez.
